@@ -20,3 +20,30 @@ public class TimeConverter {
         System.out.println("Normal time: " + normalTime);
     }
 }
+
+
+public class StringBuilderExample {
+    public static void main(String[] args) {
+        // Create a new StringBuilder instance
+        StringBuilder sb = new StringBuilder();
+
+        // Append strings to the StringBuilder
+        sb.append("Hello, ").append("world!");
+        System.out.println(sb.toString());  // Output: Hello, world!
+
+        // Get the length of the current string
+        System.out.println(sb.length());  // Output: 13
+
+        // Insert a string at a specific index
+        sb.insert(7, "beautiful ");
+        System.out.println(sb.toString());  // Output: Hello, beautiful world!
+
+        // Delete a portion of the string
+        sb.delete(7, 16);
+        System.out.println(sb.toString());  // Output: Hello, world!
+
+        // Clear the StringBuilder
+        sb.setLength(0);
+        System.out.println(sb.toString());  // Output: (empty string)
+    }
+}
